@@ -1,2 +1,2 @@
 # TabNotes
-A simple not taking Chrome extension.
+A simple note taking Chrome extension.
