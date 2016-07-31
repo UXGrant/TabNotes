@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "TabNotes",
+  "description": "Easy access short term notes with TabNotes. ",
+  "version": "1.0",
+
+  "chrome_url_overrides": {
+    "newtab": "tabnotes.html"
+  },
+
+  "permissions": [
+    "https://fonts.googleapis.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "tabnotes.js"]
+    }
+  ]
+
+}
